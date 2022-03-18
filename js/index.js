@@ -147,6 +147,8 @@ function gameEngine() {
 
 document.getElementById("pause").addEventListener("click", () => {
   ispause = !ispause;
+  if (ispause == false) musicSound.pause();
+  else musicSound.play();
 });
 
 // Main logic start here
